@@ -1,0 +1,1083 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+    
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.image{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(assets/Screenshot\ from\ 2023-12-03\ 06-25-40.png)
+}
+.image-overlay{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(238, 206, 206, 0.822);
+    display: flex;
+    justify-content: flex-start;  
+}
+.fixed-side-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    margin-top: 200px;
+}
+.fixed-item-list{
+    display: none;
+}
+.fixed-items{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    transition: all 0.2s ease;
+}
+.fixed-items:hover {
+    background-color: blue;
+    border-radius: 30px;
+    height: 50px;
+    width: 120px; /* Adjust the width as needed */
+}
+
+/* When hovering over a fixed-item, display the fixed-item-list */
+.fixed-items:hover .fixed-item-list {
+    display: block;
+}
+ 
+.name{
+    font-family: Google Sans,-apple-system,BlinkMacSystemFont,sans-serif;;
+    margin-top: 350px;
+    margin-left: 200px;
+    font-size: 50px;
+    animation-name: grow;
+    animation-duration: 2s;
+     
+}
+@keyframes grow {
+     from{
+        font-size: 1px;
+     }
+     tp{
+        font-size: 50px;
+     }
+}
+.socialmedia{
+    margin-top: 50px;
+    margin-left: 200px;
+}
+.handle{
+    height: 20px;
+    width: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 60px;
+    color: rgb(66, 69, 71);
+    /* border: 5px solid;
+    border-radius: 20px; */
+    font-size: 40px;
+    /* padding: 5px; */
+    transition: color 0.3s ease-in-out;
+}
+#blue{
+    color: blue;
+}
+.overlay-word, .visible {
+    margin-top: 415px;
+    margin-left: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: fadeInOut 6s infinite;
+
+}
+
+.overlay-word {
+    animation-delay: 3s; /* Delay the overlay animation */
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+}
+.handle:hover{
+    color: blue;
+    font-size: 40px;
+}
+.heading{
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(39, 34, 34);
+    text-decoration: underline rgb(151, 151, 217);
+    text-decoration-thickness: 4px;
+}
+.text{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    line-height: 30px;
+    margin-left: 100px;
+}
+.material-symbols-outlined{
+    margin-left: 3px;
+    margin-right: 10px;
+}
+.fixed-item-list {
+    display: none;
+    
+    transition: max-width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+  }
+  .fixed-item-list:hover {
+  
+    display: block;
+    max-width: 150px; /* Adjust the width as needed */
+  }
+  /* Common styles for mobile devices */
+@media only screen and (max-width: 600px) {
+    .image {
+        height: 50vh;
+        margin-top: 100px; /* Adjust margin as needed */
+    }
+
+    .image-overlay {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fixed-side-bar {
+        position: static;
+        margin: 20px 0;
+        order: 2;
+    }
+
+    .name {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .socialmedia {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .handle {
+        margin-right: 20px;
+    }
+
+    .overlay-word,
+    .visible {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
+/* Tablet and larger screens */
+@media only screen and (min-width: 601px) {
+    .fixed-items {
+        width: 50px; /* Adjust the width for larger screens */
+    }
+
+    .fixed-items:hover {
+        width: 120px;
+    }
+
+    .name {
+        margin-top: 350px;
+        margin-left: 200px;
+        font-size: 50px;
+    }
+
+    .socialmedia {
+        margin-top: 50px;
+        margin-left: 200px;
+    }
+
+    .handle {
+        margin-right: 60px;
+    }
+
+    .overlay-word,
+    .visible {
+        margin-top: 415px;
+        margin-left: 350px;
+    }
+}
+
+.page2part2{
+    display: flex;
+}
+.lists{
+    display: flex;
+    margin-left: 60px;
+    justify-content: space-between;
+    margin-right: 300px;
+    margin-bottom: 40px;
+}
+.uiux{
+    font-size: 50px;
+    margin-left: 40px;
+    color: rgb(119, 110, 110);
+}
+.uiuxcontent{
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.list-item{
+    margin-bottom: 45px;
+    font-size: 20px;
+    list-style-image: url(assets/arrow_forward_ios_FILL0_wght400_GRAD0_opsz24.png);
+}
+.bold{
+    font-weight: bold;
+}
+.extra-info{
+    font-size: 20px;
+    margin-left: 40px;
+    line-height: 30px;
+}
+/* Common styles for mobile devices */
+@media only screen and (max-width: 600px) {
+    .page2part2 {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center-align items on smaller screens */
+    }
+
+    .lists {
+        flex-direction: column; /* Stack list items vertically on smaller screens */
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .uiux {
+        font-size: 30px; /* Adjust the font size for smaller screens */
+        margin-left: 20px;
+        text-align: center; /* Center-align text on smaller screens */
+    }
+
+    .uiuxcontent,
+    .list-item,
+    .extra-info {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* Tablet and larger screens */
+@media only screen and (min-width: 601px) {
+    .page2part2 {
+        margin-right: 40px; /* Add some spacing on the right on larger screens */
+    }
+
+    .lists {
+        margin-left: 60px;
+        margin-right: 300px;
+        margin-bottom: 40px;
+    }
+
+    .uiux {
+        font-size: 50px;
+        margin-left: 40px;
+        text-align: left; /* Align text to the left on larger screens */
+    }
+
+    .uiuxcontent,
+    .list-item,
+    .extra-info {
+        margin-left: 40px;
+    }
+}
+
+.summarysection1{
+    display: flex;
+    flex-direction: column;
+}
+.line{
+    height: 330px;
+    width: 2px;
+    background-color: blue;
+    margin-left: 10px;
+}
+.summarysection{
+    display: flex;
+}
+.summarysection2{
+    margin-left: 30px;
+}
+.educationsection{
+    display: flex;
+}
+.page3part2{
+    display: flex;
+    justify-content: center;
+}
+.section2page3{
+    display: flex;
+}
+.sub-heading{
+    font-size: 35px;
+    margin-left: 10px;
+    color: rgb(69, 62, 62);
+    margin-bottom: 10px;
+}
+.first{
+    margin-left: 130px;
+    margin-bottom: 30px;
+}
+.image-flex{
+    margin-left: 100px;
+}
+#harry{
+    font-size: 25px;
+    color: blue;
+    margin-bottom: 20px;
+}
+.sum{
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.sum-item{
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+
+.ed{
+    margin-left: 140px;
+}
+.educationsection1{
+    margin-left: 130px;
+}
+#mas{
+    font-size: 25px;
+    color: blue;
+    margin-bottom: 20px;
+}
+.year{
+    border: 1px white;
+    background-color: rgb(231, 229, 227);
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+    
+}
+.roch{
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.mastext{
+    font-size: 20px;
+}
+.bach{
+    margin-top: 60px;
+}
+.educationsection2{
+    margin-left: 30px;
+}
+.profexppart1{
+    margin-top:50px;
+    margin-left: 200px;
+
+}
+.section1page3{
+    flex-basis: 50%;
+}
+.snr{
+    font-size: 25px;
+    color: blue;
+    margin-bottom: 20px;
+
+}
+.profexppart2{
+    margin-left: 30px;
+}
+.graphicdesign{
+    margin-top: 100px;
+}
+.line2{
+    height: 570px;
+    width: 2px;
+    background-color: blue;
+    margin-left: 10px;
+}
+.line3{
+    height: 560px;
+    width: 2px;
+    background-color: blue;
+    margin-left: 10px;
+}
+@media only screen and (max-width: 600px) {
+    .summarysection1 {
+        flex-direction: row; /* Stack items horizontally on smaller screens */
+        align-items: center; /* Center-align items on smaller screens */
+    }
+
+    .line {
+        height: 2px; /* Change the height to create a horizontal line */
+        width: 100%; /* Make the line stretch the width of the container */
+        margin: 10px 0; /* Add spacing above and below the line */
+        background-color: blue;
+    }
+
+    .summarysection {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .summarysection2 {
+        margin-left: 0; /* Remove left margin on smaller screens */
+        margin-top: 20px; /* Add top margin on smaller screens */
+    }
+
+    .page3part2 {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+    }
+
+    .section2page3 {
+        width: 100%; /* Make the second section full width on smaller screens */
+        margin-left: 0; /* Remove left margin on smaller screens */
+    }
+
+    .first {
+        margin-left: 20px; /* Adjust left margin on smaller screens */
+        margin-bottom: 20px; /* Adjust bottom margin on smaller screens */
+    }
+
+    .image-flex {
+        margin-left: 20px; /* Adjust left margin on smaller screens */
+    }
+
+    .ed {
+        margin-left: 20px; /* Adjust left margin on smaller screens */
+    }
+
+    .educationsection1 {
+        margin-left: 20px; /* Adjust left margin on smaller screens */
+    }
+
+    #mas {
+        font-size: 25px; /* Adjust font size on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .year {
+        font-size: 16px; /* Adjust font size on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .roch,
+    .mastext {
+        font-size: 16px; /* Adjust font size on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .bach {
+        margin-top: 20px; /* Adjust top margin on smaller screens */
+    }
+
+    .educationsection2 {
+        margin-left: 20px; /* Adjust left margin on smaller screens */
+    }
+
+    .profexppart1 {
+        margin-top: 20px; /* Adjust top margin on smaller screens */
+        margin-left: 20px; /* Adjust left margin on smaller screens */
+    }
+
+    .section1page3 {
+        flex-basis: 100%; /* Make the first section full width on smaller screens */
+    }
+
+    .snr {
+        font-size: 20px; /* Adjust font size on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .profexppart2 {
+        margin-left: 20px; /* Adjust left margin on smaller screens */
+    }
+
+    .graphicdesign {
+        margin-top: 20px; /* Adjust top margin on smaller screens */
+    }
+
+    .line2,
+    .line3 {
+        height: 2px; /* Change the height to create horizontal lines */
+        width: 100%; /* Make the lines stretch the width of the container */
+        margin: 10px 0; /* Add spacing above and below the lines */
+        background-color: blue;
+    }
+}
+.page4part2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.page4links{
+    margin-right: 60px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+.page4links:hover{
+    color: blue;
+    transition: 0.5s ease;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.page4part3{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.page4-img{
+    transition: transform 0.3s ease;
+}
+
+.page4-img img{
+    height: 200px;
+    width: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    border: solid whitesmoke 2px;
+    border-radius: 30px;
+}
+.page4-img:hover{
+    transform: translateY(-10px);
+}
+/* Common styles for mobile devices */
+@media only screen and (max-width: 600px) {
+    .page4part2 {
+        flex-direction: column; /* Stack navigation links vertically on smaller screens */
+        align-items: center; /* Center-align navigation links on smaller screens */
+    }
+
+    .page4links {
+        margin-right: 0; /* Remove right margin on smaller screens */
+        margin-bottom: 20px; /* Add bottom margin between navigation links on smaller screens */
+    }
+
+    .page4part3 {
+        margin-left: 0; /* Remove left margin on smaller screens */
+    }
+
+    .page4-img img {
+        width: 100%; /* Make images full width on smaller screens */
+        margin: 0; /* Remove margins on smaller screens */
+        border-radius: 10px; /* Adjust border-radius on smaller screens */
+    }
+
+    .page4-img {
+        margin-bottom: 20px; /* Add bottom margin between images on smaller screens */
+    }
+}
+
+/* Tablet and larger screens */
+@media only screen and (min-width: 601px) {
+    .page4part2 {
+        margin-bottom: 100px; /* Keep the original margin on larger screens */
+    }
+
+    .page4links {
+        margin-bottom: 0; /* Remove bottom margin between navigation links on larger screens */
+    }
+
+    .page4part3 {
+        margin-left: 100px; /* Keep the original left margin on larger screens */
+    }
+
+    .page4-img img {
+        width: 300px; /* Reset width to the original value on larger screens */
+        margin: 0 100px 50px 100px; /* Reset margins to the original values on larger screens */
+        border-radius: 30px; /* Reset border-radius to the original value on larger screens */
+    }
+
+    .page4-img {
+        margin-bottom: 0; /* Remove bottom margin between images on larger screens */
+    }
+}
+
+.part1sec1{
+    display: flex;
+    justify-content: center;
+}
+.part1sec2{
+    display: flex;
+    justify-content: center;
+}
+.part1sec3{
+    display: flex;
+    justify-content: center;
+}
+/* .firstblock{
+    display: flex;
+    justify-content: space-around;
+}
+.secondblock{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.page5part2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.block1{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 5px solid rgb(215, 210, 210);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 30px;
+    box-shadow: 0 10px 10px rgba(142, 140, 140, 0.822);
+}
+.page5{
+    margin-left: 100px;
+}
+.icon1{
+    height: 100px;
+    width: 100px;
+    border: 2px black solid;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    justify-content: center;
+    background-color: rgb(232, 229, 229);
+}
+.align-center{
+    text-align: center;
+    font-size: 20px;
+}
+.icon1:hover{
+    background-color: rgb(215, 241, 252);
+    border: 40px solid slategrey;
+} */
+/* Default styles */
+
+.firstblock {
+    display: flex;
+    justify-content: space-around;
+}
+
+.secondblock {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.page5part2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block1 {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 5px solid rgb(215, 210, 210);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 30px;
+    box-shadow: 0 10px 10px rgba(142, 140, 140, 0.822);
+}
+
+.page5 {
+    margin-left: 100px;
+}
+
+.icon1 {
+    height: 100px;
+    width: 100px;
+    border: 2px black solid;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    justify-content: center;
+    background-color: rgb(232, 229, 229);
+}
+
+.align-center {
+    text-align: center;
+    font-size: 20px;
+}
+
+.icon1:hover {
+    background-color: rgb(215, 241, 252);
+    border: 40px solid slategrey;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+    .firstblock,
+    .secondblock {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block1 {
+        width: 80%; /* Adjust the width as needed */
+        margin: 20px 0;
+    }
+
+    .page5 {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .block1 {
+        width: 100%; /* Adjust the width as needed */
+        margin: 20px 0;
+    }
+
+    .icon1 {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+/* Common styles for all screen sizes */
+.page6part2 {
+    margin-left: 150px;
+    margin-bottom: 60px;
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.images {
+    margin-left: 200px;
+    display: flex;
+    width: 85%;
+    margin-bottom: 90px;
+}
+
+.test1 {
+    height: 400px;
+    width: 50%;
+    transition: all 0.15s ease;
+}
+
+.images input {
+    display: none;
+}
+
+.test1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #080707 3px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: all 0.15s ease;
+}
+
+.dots label:hover {
+    background-color: blue;
+}
+
+.testimg {
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+    max-width: 100%;
+    scroll-snap-align: start;
+}
+
+.testlinkss {
+    margin-right: 30px;
+}
+
+.testlink {
+    display: flex;
+    justify-content: center;
+}
+
+.testlink a:hover {
+    transform: scale(1.5);
+}
+
+.text1 {
+    width: 100%;
+    display: flex;
+    justify-items: center;
+}
+
+/* Responsive Styles */
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .page6part2 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .images {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .test1 {
+        width: 100%;
+    }
+}
+
+/* For screens smaller than 480px */
+@media screen and (max-width: 480px) {
+    .test1 {
+        height: auto;
+    }
+
+    .testimg {
+        height: 80px;
+        width: 80px;
+    }
+}
+  .page7img{
+    height: 50px;
+    width: 50px;
+    border: 2px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-right: 20px;
+    transition: 0.3s ease-in-out;
+  }
+  .page7imgloc{
+    height:50px;
+    width: 80px;
+    border: 2px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-right: 20px;
+    transition: 0.3s ease-in-out;
+  }
+  .testi{
+    margin-bottom: 40px;
+  }
+  .page7img:hover{
+    background-color: rgb(199, 253, 253);
+  }
+  .page7imgloc:hover{
+    background-color: rgb(199, 253, 253);
+  }
+  .page7part2sec1{
+    display: flex;
+    margin-left: 150px;
+    margin-bottom: 100px;
+    
+  }
+  .heading4{
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .flexpage7{
+    display: flex;
+    justify-content: space-between;
+  }
+  .page7part2{
+    margin-left: 40px;
+  }
+  .page7part3{
+    margin-right: 300px;
+  }
+  form label{
+    font-size: 30px;
+  }
+  input[type="text"] {
+    height: 50px;
+    width: 500px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    margin-right: 50px;
+    margin-left: 200px;
+}
+
+input[type="email"] {
+    height: 50px;
+    width: 450px;
+    border-radius: 10px;
+    
+}
+.page7part2sec2{
+    margin-left: 20px;
+}
+.page7part1{
+    margin-bottom: 100px;
+}
+#subject{
+    width: 1015px;
+}
+#message{
+    margin-left: 200px;
+    height: 100px;
+    width: 1015px;
+    border-radius: 10px;
+    border: solid black 2px;
+    margin-bottom: 70px;
+}
+input[type="submit"] {
+    margin-left: 600px;
+    height: 40px;
+    width: 150px;
+    border-radius: 30px;
+    color: white;
+    background-color: blue;
+    font-size: large;
+}
+.uparrowscroll{
+    margin-left: 1200px;
+    font-size: 50px;
+    border: 3px black solid;
+    border-radius: 100px;
+    transition: 0.3s ease-in-out;
+}
+.uparrowscroll:hover{
+    background-color: rgb(200, 241, 241);
+}
+
+/* .footersocial{
+    margin-left: 700px;
+}
+.footer{
+    background-color: #eae7e7;
+}
+.copyright{
+    margin-left: 650px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.designer{
+    margin-left: 810px;
+    margin-bottom: 20px;
+} */
+.footer {
+    background-color: #eae7e7;
+    padding: 20px; /* Added padding for better spacing */
+}
+
+.heading,
+.text,
+.socialmedia,
+.copyright,
+.designer {
+    text-align: center; /* Center-align text for better responsiveness */
+}
+
+.footersocial {
+    display: flex;
+    justify-content: center; /* Center-align social media icons */
+    margin-top: 20px; /* Added margin for better spacing */
+    margin-bottom: 40px;
+    
+}
+
+.handle {
+    margin: 0 10px; /* Added margin between social media icons */
+    margin-right: 50px;
+}
+
+/* Media query for small screens (e.g., mobile devices) */
+@media only screen and (max-width: 768px) {
+    .footersocial {
+        flex-direction: column; /* Stack social media icons vertically on small screens */
+    }
+
+    .copyright {
+        margin-top: 20px; /* Adjusted margin for better spacing on small screens */
+        margin-bottom: 20px; /* Adjusted margin for better spacing on small screens */
+    }
+
+    .designer {
+        margin-left: auto; /* Align to the right on small screens */
+        margin-right: 10px; /* Added margin for better spacing on small screens */
+    }
+}
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
